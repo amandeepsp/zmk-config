@@ -1,24 +1,26 @@
 // vim: ft=dts
 
 / {
-    behaviours {
+    behaviors {
         hml: homerow_mods_left {
-             compatible = "zmk,behvior-hold-tap";
+             compatible = "zmk,behavior-hold-tap";
              label = "HOMEROW_MODS_LEFT";
              #binding-cells = <2>;
              bindings = <&kp>, <&kp>;
              flavor = "balanced";
              tapping-term-ms = <200>;
+             quick-tap-ms = <0>;
              hold-trigger-key-positions = <KEYS_L>;
         };
 
         hmr: homerow_mods_right {
-             compatible = "zmk,behvior-hold-tap";
+             compatible = "zmk,behavior-hold-tap";
              label = "HOMEROW_MODS_RIGHT";
              #binding-cells = <2>;
              bindings = <&kp>, <&kp>;
              flavor = "balanced";
              tapping-term-ms = <200>;
+             quick-tap-ms = <0>;
              hold-trigger-key-positions = <KEYS_R>;
         };
     };
